@@ -2,13 +2,13 @@
 
 ## Description
 
-This is an extension of the image jchaney/mcmyadmin, so most credit goes to him. The changes are:
+This is an extension of the [McMyAdmin Docker image](https://hub.docker.com/r/jchaney/mcmyadmin/) by [jchaney](https://hub.docker.com/r/jchaney), so most credit goes to him. Its main target is to allow the use of the [McMyAdmin Dynmap extension](https://github.com/isitgeorge/McMyAdmin-Extension-Dynmap) by [isitgeorge](https://github.com/isitgeorge) inside of the container. The changes are:
 
 - Dynmap extension is installed and activated and port 8123 is exposed
 - The initial password is set only once at build time so that it is not reset on every restart
 - libgdiplus is installed to fix banner image generation and prevent exceptions
 
-NOTE: The actual Dynmap server plugin has to be installed and configured manually! This can happen via the McMyAdmin interface or by mounting the plugins directory. This image only comes with the McMyAdmin extension.
+NOTE: The actual Dynmap server plugin has to be installed and configured manually! This can happen via the McMyAdmin web interface or by mounting the `plugins` directory. This image only comes with the McMyAdmin extension.
 
 ## Configuration
 
